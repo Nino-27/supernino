@@ -3,4 +3,8 @@ function setup() {
 }
 function draw() {
     background(51);
+
+    stroke(255);
+    
+    ellipse(30, 30, 50,50);
 }
