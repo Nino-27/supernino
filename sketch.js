@@ -1,5 +1,5 @@
 //let imagenes = ["foto_0.jpg", "foto_1.jpg", "foto_2.jpg"];
-let index = 0;
+let index = 1;
 let bubble = [];
 let foto;
 let imagenes = [];
