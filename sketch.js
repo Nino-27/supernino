@@ -4,9 +4,12 @@ let bubble = [];
 let foto;
 let imagenes = [];
 
-for (let i = 0; i < 3; i ++) {
+function preload() {
+    for (let i = 0; i < 3; i ++) {
     imagenes[i] = `foto_${i}.jpg`
+  }
 }
+
 
 function cambiarFoto() {
     index ++;
