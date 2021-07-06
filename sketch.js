@@ -44,10 +44,10 @@ function setup() {
     boton.mousePressed(cambiarFoto);
 
     bubble.push(new Bubble())
-    setInterval(cambiarFoto, 1000);
+   // setInterval(cambiarFoto, 1000);
 }
 function draw() {
     background(51);
     bubble[0].show();
-
+    bubble[0].update();
 }
