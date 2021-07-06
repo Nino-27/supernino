@@ -8,7 +8,7 @@ let imagenes = [];
 
 function preload() {
     for (let i = 0; i < 3; i ++) {
-    imagenes[i] = `foto_${i}.jpg`
+    imagenes[i] = `foto_${i}.JPG`
     foto = document.getElementById('imagenes');
   }
 }
