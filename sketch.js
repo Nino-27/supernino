@@ -1,12 +1,15 @@
 //let imagenes = ["foto_0.jpg", "foto_1.jpg", "foto_2.jpg"];
-let index = 1;
+let index = 0;
 let bubble = [];
 let foto;
 let imagenes = [];
 
+
+
 function preload() {
     for (let i = 0; i < 3; i ++) {
     imagenes[i] = `foto_${i}.jpg`
+    foto = document.getElementById('imagenes');
   }
 }
 
@@ -18,7 +21,10 @@ function cambiarFoto() {
         index = 0;
     }
 
-    foto = document.getElementById('imagenes').src = imagenes[index];
+    document.getElementById('myH').innerHTML = "Fotos de nosotros"
+    
+    foto.src = imagenes[index];
+    console.log('index: ' + index + " imagene: " + imagenes[index]);
 }
 
 function Bubble() {
@@ -45,6 +51,8 @@ function setup() {
 
     bubble.push(new Bubble())
    // setInterval(cambiarFoto, 1000);
+
+   console.log("imagenes length: " + imagenes.length);
 }
 function draw() {
     background(51);
