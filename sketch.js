@@ -23,7 +23,7 @@ function Bubble() {
     this.y = 200;
 
     this.show = function() {
-        image(imagenes[index],this.x, this.y, 50, 50);
+        ellipse(this.x, this.y, 50, 50);
     }
 }
 
