@@ -2,13 +2,13 @@ let imagenes = [];
 let index = 0;
 let bubble = [];
 
-function preload() {
+/*function preload() {
     for (let i = 0; i < 3; i ++) {
         imagenes[i] = loadImage(`foto_${i}.jpg`);
     }
 
     setInterval(cambiarFoto, 1000);
-}
+}*/
 
 function cambiarFoto() {
     index ++;
@@ -18,17 +18,18 @@ function cambiarFoto() {
 }
 
 function Bubble() {
-    this.x = 20;
-    this.y = 20;
+    this.x = 200;
+    this.y = 200;
 
     this.show = function() {
-        image(imagenes[0],this.x, this.y, width-40, height-40);
+        ellipse(this.x, this.y, 50, 50);
     }
 }
 
 function setup() {
     createCanvas(400,400);
     bubble.push(new Bubble())
+    setInterval(cambiarFoto, 1000);
 }
 function draw() {
     background(51);
