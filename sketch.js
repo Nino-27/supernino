@@ -28,6 +28,11 @@ function Bubble() {
     this.show = function() {
         ellipse(this.x, this.y, 50, 50);
     }
+
+    this.update = function() {
+        this.x = this.x + random(-1, 1);
+        this.y = this.y + random(-1, 1);
+    }
 }
 
 function setup() {
