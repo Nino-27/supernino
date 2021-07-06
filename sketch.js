@@ -47,6 +47,11 @@ function setup() {
 
     //imagenes = ["foto_0.jpg", "foto_1.jpg", "foto_2.jpg"]
     let boton = createButton("Click Me");
+    boton.style('background-color','green');
+    boton.style('width','100pt')
+    boton.style('height','50pt')
+    boton.style('font-size','22pt')
+    boton.style('color','white')
     boton.mousePressed(cambiarFoto);
 
     bubble.push(new Bubble())
